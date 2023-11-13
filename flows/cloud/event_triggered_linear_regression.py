@@ -6,7 +6,7 @@ DATETIME_FORMAT = '%Y-%m-%d %H:%M:%S'
 
 @project(name="fullstack")
 @trigger(events=['s3'])
-@conda_base(libraries={'pandas': '1.4.2', 'pyarrow': '11.0.0', 'numpy': '1.21.2', 'scikit-learn': '1.1.2'})
+@conda_base(libraries={'pandas': '1.4.2', 'pyarrow': '11.0.0', 'scikit-learn': '1.1.2'})
 class TaxiFarePrediction(FlowSpec):
 
     data_url = Parameter("data_url", default=URL)
